@@ -3,20 +3,25 @@
 The following assumes you have the plugin installed via
 
 ```shell
-kubectl krew install monit
+oc krew install monit
 ```
 
-### Scan images in your current kubecontext
+### Interact with monitoring stack of a cluster in your current kubecontext
 
 ```shell
-kubectl monit
+oc monit
 ```
 
 ### Scan images in another kubecontext
 
 ```shell
-kubectl monit --context=context-name
+oc monit --context=context-name
 ```
 
 ## How it works
-Write a brief description of your plugin here.
+`monit` helps you to interact with the built-in monitoring stack. It allows 
+you to do the following things quickly from the CLI;
+* get Prometheus route
+* get Grafana Route
+* get Alertmanager route
+* get all firing alerts (can be grouped by severity)

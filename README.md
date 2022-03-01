@@ -1,11 +1,11 @@
 # monit kubectl
 
-A `kubectl` plugin to ...
+An `oc` plugin to interact with OpenShift's monitoring stack.
 
 ## Quick Start
 
 ```
-kubectl krew install monit
-kubectl monit
+oc krew install monit
+oc monit
 ```
-
+ See [Documentation](/doc/USAGE.md) for further instructions

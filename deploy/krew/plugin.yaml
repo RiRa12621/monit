@@ -1,3 +1,4 @@
+# nonk8s
 apiVersion: krew.googlecontainertools.github.com/v1alpha2
 kind: Plugin
 metadata:
@@ -45,11 +46,11 @@ spec:
   homepage: https://github.com/OperatingOpenShift/monit
   caveats: |
     Usage:
-      $ kubectl monit
+      $ oc monit
 
     For additional options:
-      $ kubectl monit --help
+      $ oc monit --help
       or https://github.com/OperatingOpenShift/monit/blob/v0.1.0/doc/USAGE.md
 
   description: |
-    This is a new plugin
+    This is an oc plugin to interact with the monitoring stack.
